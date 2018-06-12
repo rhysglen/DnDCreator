@@ -358,15 +358,67 @@ namespace DnDCreator
             }
             else if (type == "Rouge")
             {
+                hitPoints = 8 + constMod;
+                hitDie = "1d8";
+                proficiencies.Add("Light Armor");
+                strST = strMod;
+                dexST = dexMod + proficiency;
+                constST = constMod;
+                wisST = wisMod;
+                intST = intMod + proficiency;
+                chaST = chaMod;
+                proficiencies.Add("Simple Weapons");
+                proficiencies.Add("Hand Crossbow");
+                proficiencies.Add("Longswords");
+                proficiencies.Add("Rapiers");
+                proficiencies.Add("Shortswords");
+                proficiencies.Add("Thieves' Tools");
+                traits.Add("Sneak Attack");
+                traits.Add("Expertise");
+                traits.Add("Thieves Cant");
+                equipment.Add("Leather Armor");
+                weapons newweapon;
+                newweapon = new weapons("Dagger X2", proficiency + dexMod, "1d4 Piercing");
+                weapon.Add(newweapon);
 
             }
             else if (type == "Paladin")
             {
-
+                hitDie = "1d10";
+                hitPoints = 10 + constMod;
+                proficiencies.Add("All Armor");
+                proficiencies.Add("Sheilds");
+                proficiencies.Add("Simple Weapons");
+                proficiencies.Add("Martial Weapons");
+                strST = strMod;
+                dexST = dexMod;
+                constST = constMod;
+                wisST = wisMod + proficiency;
+                intST = intMod;
+                chaST = chaMod + proficiency;
+                equipment.Add("Chain Mail");
+                equipment.Add("Holy Symbol");
+                traits.Add("Lay on Hands");
+                traits.Add("Divine Sense");
             }
             else if (type == "Monk")
             {
-
+                hitPoints = 8 + constMod;
+                hitDie = "1d8";
+                proficiencies.Add("Simple Weapons");
+                proficiencies.Add("Shortswords");
+                proficiencies.Add("Artisan's Tools or Musical Instument");
+                strST = strMod + proficiency;
+                dexST = dexMod + proficiency;
+                constST = constMod;
+                wisST = wisMod;
+                intST = intMod;
+                chaST = chaMod;
+                weapons newweapon;
+                newweapon = new weapons("Dart X10", proficiency + dexMod, "1d4 Piercing");
+                weapon.Add(newweapon);
+                traits.Add("Unarmored Defence");
+                traits.Add("Martial Arts");
             }
             else if (type == "Bard")
             {
@@ -421,12 +473,27 @@ namespace DnDCreator
                 chaST = chaMod;
                 traits.Add("Fighting Style");
                 traits.Add("Second Wind");
-
-
             }
             else if (type == "Ranger")
             {
-
+                hitDie = "1d10";
+                hitPoints = 10 + constMod;
+                proficiencies.Add("Light Armor");
+                proficiencies.Add("Medium Armor");
+                proficiencies.Add("Simple Weapons");
+                proficiencies.Add("Martial Weapons");
+                strST = strMod + proficiency;
+                dexST = dexMod + proficiency;
+                constST = constMod;
+                wisST = wisMod;
+                intST = intMod;
+                chaST = chaMod;
+                traits.Add("Favored Enemy");
+                traits.Add("Natural Explorer");
+                weapons newweapon;
+                newweapon = new weapons("Longbow", proficiency + dexMod, "1d8 Piercing");
+                weapon.Add(newweapon);
+                equipment.Add("Arrows X20");
             }
 
             //BACKGROUND 
