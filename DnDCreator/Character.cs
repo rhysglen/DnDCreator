@@ -75,54 +75,286 @@ namespace DnDCreator
             //RACES
             if (race == "Half-Elf")
             {
-            
+                charisma = charisma + 2;
+                //TODO: add in the function of choosing 2 ability scores
+                speed = 30;
+                traits.Add("Darkvision");
+                traits.Add("Fey Ancestry");
+                proficiencies.Add("Skill Versatility");
+                //TODO: add in the function of choosing 2 skills
+                languages.Add("Common");
+                languages.Add("Elvish");
+                languages.Add("One Extra"); 
+
             }
             else if (race == "Half-Orc")
             {
+                strength = strength + 2;
+                constitution = constitution + 1;
+                speed = 30;
+                traits.Add("Darkvision");
+                traits.Add("Menacing");
+                traits.Add("Relentless Endurance");
+                traits.Add("Savage Attacks");
+                languages.Add("Common");
+                languages.Add("Orc");
+                skills.Add("Intimidation");
 
             }
-            else if (race == "Elf")
+            else if (race == "High Elf")
             {
-
+                dexterity = dexterity + 2;
+                inteligence = inteligence + 1;
+                traits.Add("Elf Weapon Training");
+                proficiencies.Add("Longsword");
+                proficiencies.Add("Shortsword");
+                proficiencies.Add("Shortbow");
+                proficiencies.Add("Longbow");
+                traits.Add("Extra Cantrip");
+                speed = 30;
+                traits.Add("Darkvision");
+                traits.Add("Keen Senses");
+                traits.Add("Fey Ancestry");
+                traits.Add("Trance");
+                languages.Add("Common");
+                languages.Add("Elvish");
+                languages.Add("One Extra");
+                skills.Add("Perception");
             }
-            else if (race == "Dwarf")
+            else if (race == "Wood Elf")
             {
-
+                dexterity = dexterity + 2;
+                wisdom = wisdom + 1;
+                proficiencies.Add("Elf Weapon Training");
+                proficiencies.Add("Longsword");
+                proficiencies.Add("Shortsword");
+                proficiencies.Add("Shortbow");
+                proficiencies.Add("Longbow");
+                traits.Add("Fleet Footed");
+                traits.Add("Mask of the Wild");
+                speed = 35;
+                traits.Add("Darkvision");
+                traits.Add("Keen Senses");
+                traits.Add("Fey Ancestry");
+                traits.Add("Trance");
+                languages.Add("Common");
+                languages.Add("Elvish");
+                skills.Add("Perception");
+            }
+            else if (race == "Dark Elf")
+            {
+                dexterity = dexterity + 2;
+                charisma = charisma + 1;
+                traits.Add("Drow Weapon Training");
+                proficiencies.Add("Rapier");
+                proficiencies.Add("Shortsword");
+                proficiencies.Add("Hand Crossbow");
+                traits.Add("Drow Magic");
+                traits.Add("Sunlight Sensitivity");
+                speed = 35;
+                traits.Add("Superior Darkvision");
+                traits.Add("Keen Senses");
+                skills.Add("Perception");
+                traits.Add("Fey Ancestry");
+                traits.Add("Trance");
+                languages.Add("Common");
+                languages.Add("Elvish");
+            }
+            else if (race == "Hill Dwarf")
+            {
+                constitution = constitution + 2;
+                wisdom = wisdom + 1;
+                traits.Add("Dwarven Toughness");
+                speed = 25;
+                traits.Add("Darkvision");
+                traits.Add("Dwarven Resilience");
+                traits.Add("Dwarven Combat Training");
+                proficiencies.Add("Battleaxe");
+                proficiencies.Add("Handaxe");
+                proficiencies.Add("Light Hammer");
+                proficiencies.Add("Warhammer");
+                traits.Add("Stonecutting");
+                traits.Add("Artisan Tool Proficiency");
+                languages.Add("Common");
+                languages.Add("Dwarvish");
+            }
+            else if (race == "Mountain Dwarf")
+            {
+                constitution = constitution + 2;
+                strength = strength + 2;
+                traits.Add("Dwarven Armor Training");
+                proficiencies.Add("Medium Armor");
+                proficiencies.Add("Light Armor");
+                speed = 25;
+                traits.Add("Darkvision");
+                traits.Add("Dwarven Resilience");
+                traits.Add("Dwarven Combat Training");
+                proficiencies.Add("Battleaxe");
+                proficiencies.Add("Handaxe");
+                proficiencies.Add("Light Hammer");
+                proficiencies.Add("Warhammer");
+                traits.Add("Stonecutting");
+                traits.Add("Artisan Tool Proficiency");
+                languages.Add("Common");
+                languages.Add("Dwarvish");
             }
             else if (race == "Human")
             {
-
+                strength = strength + 1;
+                dexterity = dexterity + 1;
+                constitution = constitution + 1;
+                inteligence = inteligence + 1;
+                wisdom = wisdom + 1;
+                charisma = charisma + 1;
+                speed = 30;
+                languages.Add("Common");
+                languages.Add("One Extra");
             }
             else if (race == "Tiefling")
             {
-
+                inteligence = inteligence + 1;
+                charisma = charisma + 2;
+                speed = 30;
+                traits.Add("Darkvision");
+                traits.Add("Hellish Resistance");
+                traits.Add("Infernal Legacy");
+                languages.Add("Common");
+                languages.Add("Infernal");
             }
-            else if (race == "Halfling")
+            else if (race == "Lightfoot Halfling")
             {
-
+                dexterity = dexterity + 2;
+                charisma = charisma + 1;
+                traits.Add("Naturally Stealthy");
+                speed = 25;
+                traits.Add("Lucky");
+                traits.Add("Brave");
+                traits.Add("Halfling Nimbleness");
+                languages.Add("Common");
+                languages.Add("Halfling");
+            }
+            else if (race == "Stout Halfling")
+            {
+                dexterity = dexterity + 2;
+                constitution = constitution + 1;
+                traits.Add("Stout Resilience");
+                speed = 25;
+                traits.Add("Lucky");
+                traits.Add("Brave");
+                traits.Add("Halfling Nimbleness");
+                languages.Add("Common");
+                languages.Add("Halfling");
             }
             else if (race == "Dragonborn")
             {
-
+                strength = strength + 2;
+                charisma = charisma + 1;
+                speed = 30;
+                traits.Add("Dragonic Ancestry");
+                traits.Add("Breath Weapon");
+                traits.Add("Damage Resistance");
+                languages.Add("Common");
+                languages.Add("Dragonic");
             }
-            else if (race == "Gnome")
+            else if (race == "Forest Gnome")
             {
-
+                inteligence = inteligence + 2;
+                dexterity = dexterity + 1;
+                traits.Add("Natural Illusionist");
+                traits.Add("Speak with Small Beasts");
+                speed = 25;
+                traits.Add("Darkvision");
+                traits.Add("Gnome Cunning");
+                languages.Add("Common");
+                languages.Add("Gnomish");
+            }
+            else if (race == "Rock Gnome")
+            {
+                inteligence = inteligence + 2;
+                constitution = constitution + 1;
+                traits.Add("Artificer's Lore");
+                traits.Add("Tinker");
+                speed = 25;
+                traits.Add("Darkvision");
+                traits.Add("Gnome Cunning");
+                languages.Add("Common");
+                languages.Add("Gnomish");
             }
 
             //CLASSES
-
+            //TODO: Come back for skill choice
             if (type == "Cleric")
             {
-
+                hitPoints = 8 + constMod;
+                hitDie = "1d8";
+                proficiencies.Add("Light Armor");
+                proficiencies.Add("Medium Armor");
+                proficiencies.Add("Sheilds");
+                proficiencies.Add("Simple Weapons");
+                strST = strMod;
+                dexST = dexMod;
+                constST = constMod;
+                wisST = wisMod + proficiency;
+                intST = intMod;
+                chaST = chaMod + proficiency;
+                equipment.Add("Shield");
+                equipment.Add("Holy Symbol");
+                traits.Add("Spellcasting");
+                traits.Add("Devine Domain");
             }
             else if (type == "Druid")
             {
-
+                hitPoints = 8 + constMod;
+                hitDie = "1d8";
+                proficiencies.Add("Light Armor");
+                proficiencies.Add("Medium Armor");
+                proficiencies.Add("Sheilds");
+                proficiencies.Add("Clubs");
+                proficiencies.Add("Daggers");
+                proficiencies.Add("Darts");
+                proficiencies.Add("Javelins");
+                proficiencies.Add("Maces");
+                proficiencies.Add("Quarterstaffs");
+                proficiencies.Add("Scimitars");
+                proficiencies.Add("Sickles");
+                proficiencies.Add("Slings");
+                proficiencies.Add("Spears");
+                proficiencies.Add("Herbalism Kits");
+                strST = strMod;
+                dexST = dexMod;
+                constST = constMod;
+                wisST = wisMod + proficiency;
+                intST = intMod + proficiency;
+                chaST = chaMod;
+                equipment.Add("Leather Armor");
+                equipment.Add("Druidic Focus");
+                equipment.Add("Explorer's Pack");
+                traits.Add("Spellcasting");
+                traits.Add("Druidic");
             }
             else if (type == "Barbarian")
             {
-
+                hitPoints = 12 + constMod;
+                hitDie = "1d12";
+                proficiencies.Add("Light Armor");
+                proficiencies.Add("Medium Armor");
+                proficiencies.Add("Shields");
+                proficiencies.Add("Simple Weapons");
+                proficiencies.Add("Martial Weapons");
+                strST = strMod + proficiency;
+                dexST = dexMod;
+                constST = constMod + proficiency;
+                wisST = wisMod;
+                intST = intMod;
+                chaST = chaMod;
+                equipment.Add("Explorer's Pack");
+                weapons newweapon;
+                newweapon = new weapons("Javelin X4", proficiency + strMod, "1d6 Piercing");
+                weapon.Add(newweapon);
+                //newweapon = new weapons("Battleaxe", proficiency + strMod, "1d8 Slashing");
+                //weapon.Add(newweapon);
+                traits.Add("Rage");
+                traits.Add("Unarmored Defence");
             }
             else if (type == "Rouge")
             {
@@ -138,7 +370,28 @@ namespace DnDCreator
             }
             else if (type == "Bard")
             {
-
+                hitDie = "1d8";
+                hitPoints = 8 + constMod;
+                proficiencies.Add("Light Armor");
+                proficiencies.Add("Simple Weapons");
+                proficiencies.Add("Hand Crossbow");
+                proficiencies.Add("Longswords");
+                proficiencies.Add("Rapiers");
+                proficiencies.Add("Shortswords");
+                proficiencies.Add("Three Musical Instuments");
+                strST = strMod;
+                dexST = dexMod + proficiency;
+                constST = constMod;
+                wisST = wisMod;
+                intST = intMod;
+                chaST = chaMod + proficiency;
+                equipment.Add("Leather Armor");
+                weapons newweapon;
+                newweapon = new weapons("Dagger", proficiency + strMod, "1d4 Piercing");
+                weapon.Add(newweapon);
+                traits.Add("Spellcasting");
+                traits.Add("Bardic Inspiration");
+                //choose 3 skills 
             }
             else if (type == "Wizard")
             {
@@ -154,6 +407,21 @@ namespace DnDCreator
             }
             else if (type == "Fighter")
             {
+                hitDie = "1d10";
+                hitPoints = 10 + constMod;
+                proficiencies.Add("All Armor");
+                proficiencies.Add("Sheilds");
+                proficiencies.Add("Simple Weapons");
+                proficiencies.Add("Martial Weapons");
+                strST = strMod + proficiency;
+                dexST = dexMod;
+                constST = constMod + proficiency;
+                wisST = wisMod;
+                intST = intMod;
+                chaST = chaMod;
+                traits.Add("Fighting Style");
+                traits.Add("Second Wind");
+
 
             }
             else if (type == "Ranger")
